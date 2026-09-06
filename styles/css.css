@@ -1,36 +1,85 @@
 h1 {
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
   font-size: 250%;
   font-family: Arial, sans-serif;
-  text-align: center;
-  color: rgb(0, 0, 0);
-
-  padding: 0.25%;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px 20px;
+  border-radius: 10px;
 }
 
 #joinButton {
+
   background-color: rgb(0, 255, 0);
+
   position: absolute;
+
   top: 40%;
+
   left: 25%;
+
   align-items: center;
+
   font-family: Arial, sans-serif;
+
   text-align: center;
+
   color: rgb(12, 12, 12);
+
   padding: 3%;
+
 }
+
 #rejectButton {
+
   background-color: rgb(255, 0, 0);
+
   position: absolute;
+
   top: 40%;
+
   right: 25%;
+
   font-family: Arial, sans-serif;
+
   text-align: center;
+
   color: rgb(2, 2, 2);
+
   padding: 3%;
+
 }
+
 div {
+
   font-family: Arial, sans-serif;
+
   text-align: center;
+
   color: rgb(2, 2, 2);
+
   padding: 20%;
+
+}
+/* Mobile layout */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 180%;
+    padding: 5%;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10%;
+  }
+
+  #joinButton,
+  #rejectButton {
+    width: 70%;
+    padding: 5%;
+    font-size: 1.1rem;
+  }
 }
