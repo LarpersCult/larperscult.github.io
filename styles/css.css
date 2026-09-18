@@ -1,17 +1,26 @@
+body {
+  background-image: url("/images/iwantyou.jpg");
+  background-size: 60% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+p {
+  visibility: hidden;
+}
 h1 {
+  -webkit-text-stroke: 0.5px red;
   text-align: center;
   width: fit-content;
-  margin: 0 auto;
-  font-size: 250%;
+  margin: 2% auto;
+  font-size: 225%;
   font-family: Arial, sans-serif;
   color: black;
-  background-color: rgba(255, 255, 255, 0.6);
-  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 20px 10px;
   border-radius: 10px;
 }
 
 #joinButton {
-
   background-color: rgb(0, 255, 0);
 
   position: absolute;
@@ -29,11 +38,9 @@ h1 {
   color: rgb(12, 12, 12);
 
   padding: 3%;
-
 }
 
 #rejectButton {
-
   background-color: rgb(255, 0, 0);
 
   position: absolute;
@@ -49,37 +56,58 @@ h1 {
   color: rgb(2, 2, 2);
 
   padding: 3%;
-
 }
 
 div {
-
   font-family: Arial, sans-serif;
 
   text-align: center;
 
   color: rgb(2, 2, 2);
 
-  padding: 20%;
-
+  padding: 16%;
 }
 /* Mobile layout */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   h1 {
-    font-size: 180%;
+    font-size: 100%;
     padding: 5%;
   }
-
+  div {
+    padding: 30%;
+  }
+  p {
+    visibility: hidden;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
   .button-container {
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     margin-top: 10%;
   }
 
-  #joinButton,
-  #rejectButton {
-    width: 70%;
-    padding: 5%;
+  #joinButton {
+    position: absolute;
+    width: 25%;
+    padding: 3%;
     font-size: 1.1rem;
+    top: 50%;
+    left: 15%;
+  }
+  #rejectButton {
+    top: 50%;
+    position: absolute;
+    width: 25%;
+    padding: 3%;
+    font-size: 1.1rem;
+    right: 15%;
+  }
+  body {
+    background-image: url("/images/iwantyou.jpg");
+    background-size: 100% 200%;
+    background-position: top;
+    background-repeat: no-repeat;
   }
 }
