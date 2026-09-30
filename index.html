@@ -6,7 +6,6 @@
     <title>Larpers Cult</title>
   </head>
   <link rel="stylesheet" href="styles/css.css" />
-  <script src="main.js" defer></script>
   <body>
     <h1>
       <strong
@@ -21,6 +20,15 @@
       </a>
       <button id="rejectButton">Reject the Cult</button>
     </div>
+    <script>
+      document.getElementById("rejectButton").addEventListener("click", () => {
+        const gifWindow = window.open("gif.html", "_blank");
+        if (gifWindow) gifWindow.opener = null;
+        window.setTimeout(() => {
+          window.location.href = "no-second-chances.html";
+        }, 150);
+      });
+    </script>
   </body>
 </html>
 
